@@ -1,0 +1,119 @@
+body {
+    background: #eeefed;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding-top: 25px;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    color: #353535;
+    font-size: 50px;
+    font-family: "Calibri", sans-serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 18px;
+    color: #676767;
+    margin-bottom: 40px;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #000;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: block;
+    margin: 0 auto 20px; /* Center and add margin to stack vertically */
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+/* Add your custom styles for btn-1, btn-2, and btn-3 */
+.btn-1 {
+    
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(
+      109.6deg,
+      rgb(9, 9, 121) 11.2%,
+      rgb(144, 6, 161) 53.7%,
+      rgb(0, 212, 255) 100.2%
+    );
+  }
+  
+  .btn-1:hover {
+     /* hover styles for btn-1 */
+  background-image: linear-gradient(
+    109.6deg,
+    rgb(240, 232, 22) 11.2%,
+    rgb(15, 123, 64) 53.7%,
+    rgb(195, 231, 118) 100.2%
+  );
+  background-size: 110% 110%;
+  background-position: 100% 0;
+  transition: background-position 0.3s ease-out;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+  
+  
+  .btn-2 {
+    /* styles specific to btn-2 */
+    background: linear-gradient(to right, blue, red, orange);
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+    border-radius: 8px;
+    color: yellow;
+    border: 2px solid white;
+    transition: background 0.5s, text-shadow 0.5s, border 0.5s; /* add transition effect */
+  }
+  
+  .btn-2:hover {
+    background: linear-gradient(to top, blue, red, orange);
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff0, 0 0 30px #ff0;
+    border: 2px solid #ffa;
+    animation: pulse 2s infinite; /* add animation */
+  }
+  @keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+  
+  .btn-3 {
+    /* styles specific to btn-3 */
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  .btn-3:hover {
+    background-color: #e53935;
+  }
