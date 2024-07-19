@@ -108,12 +108,30 @@ p {
     }
 }
   
-  .btn-3 {
+  .btn-3::before {
     /* styles specific to btn-3 */
-    background-color: #f44336;
-    color: #fff;
+    content: '';
+    background: linear-gradient(45deg, #00d9ff, #00ff95, #00d9ff);
+    color: #0a0909;
+    z-index: -1;
+    filter: blur(30px);
+    opacity: 0;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    transition: opacity 0.3s ease;
   }
   
   .btn-3:hover {
-    background-color: #e53935;
+    color: #fff;
+    box-shadow: 0 0 50px #00d9ff;
   }
+  .btn-3:hover::before {
+    opacity: 1;
+}
+.btn-3 active {
+  transform: scale(0.95);
+  box-shadow: 0 0 20px #00d9ff;
+}
