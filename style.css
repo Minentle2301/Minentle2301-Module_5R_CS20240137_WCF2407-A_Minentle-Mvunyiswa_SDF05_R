@@ -44,14 +44,14 @@ p {
     transition: all 0.3s ease;
     position: relative;
     display: block;
-    margin: 0 auto 20px; /* Center and add margin to stack vertically */
+    margin: 0 auto 20px; 
     box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
         7px 7px 20px 0px rgba(0, 0, 0, .1),
         4px 4px 5px 0px rgba(0, 0, 0, .1);
     outline: none;
 }
 
-/* Add your custom styles for btn-1, btn-2, and btn-3 */
+
 .btn-1 {
     
     font-weight: bolder;
@@ -81,20 +81,20 @@ p {
   
   
   .btn-2 {
-    /* styles specific to btn-2 */
+    /* styling  btn-2 */
     background: linear-gradient(to right, blue, red, orange);
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
     border-radius: 8px;
     color: yellow;
     border: 2px solid white;
-    transition: background 0.5s, text-shadow 0.5s, border 0.5s; /* add transition effect */
+    transition: background 0.5s, text-shadow 0.5s, border 0.5s; /* added transition effect */
   }
   
   .btn-2:hover {
     background: linear-gradient(to top, blue, red, orange);
     text-shadow: 0 0 10px #fff, 0 0 20px #ff0, 0 0 30px #ff0;
     border: 2px solid #ffa;
-    animation: pulse 2s infinite; /* add animation */
+    animation: pulse 2s infinite; /* added animation */
   }
   @keyframes pulse {
     0% {
@@ -109,7 +109,7 @@ p {
 }
   
   .btn-3::before {
-    /* styles specific to btn-3 */
+    
     content: '';
     background: linear-gradient(45deg, #00d9ff, #00ff95, #00d9ff);
     color: #0a0909;
